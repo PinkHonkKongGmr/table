@@ -1,0 +1,79 @@
+.order_book {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+  min-width: 900px;
+  max-width: 1920px;
+
+  .order_book_table {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+.scroll {
+  flex-grow: 1;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  &:hover
+  {overflow:scroll;}
+  .subScrol
+  {display: flex;}
+}
+
+.table_head
+{width:50%;display: flex;position: fixed;}
+
+.table
+ {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0;
+  position: relative;
+  flex-wrap: wrap;
+
+  div {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .row_total {
+    width: 50%;
+  }
+
+  .row_count {
+    width: 10%;
+  }
+
+  .row_price {
+    width: 15%;
+  }
+
+  .row_amount {
+    width: 25%;
+  }
+}
+
+.graph {
+  position: absolute;
+  height: 100%;
+  opacity: 0.5;
+  box-sizing: border-box;
+}
+
+.left_side .graph {
+  right: 0;
+  background: green;
+}
+
+.right_side .graph {
+  left: 0;
+  background: pink;
+}
